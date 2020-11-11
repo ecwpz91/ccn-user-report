@@ -9,6 +9,9 @@ if [ ! -f ./bin ]; then
   chmod +x ./bin/oc
   chmod +x ./bin/kubectl
   rm -rf openshift-client-linux.tar.gz
+  echo "Downloading tkn cli for pipelines"
+  curl -L https://github.com/tektoncd/cli/releases/download/v0.13.1/tkn_0.13.1_Linux_x86_64.tar.gz \
+  | tar -xvzf - -C "./bin" tkn &>/dev/null
 fi
 
 
