@@ -216,6 +216,10 @@ function run_modules(){
     container-check $USER_NAME mlbparks-[0-9] $USER_NAME "Lab 18 - Binary Builds for Day to Day Development" "build\|deploy"
     ;;
 
+  devsecops)
+    devsecops-started $USER_NAME
+    ;;
+
   *)
     echo -n "unknown module"
     exit $?
