@@ -22,6 +22,7 @@ source common_functions/module2.sh
 source common_functions/module3.sh
 source common_functions/module4.sh
 source common_functions/openshift101.sh
+source common_functions/devsecops.sh
 source common_functions/user-report.sh
 source common_functions/functions.sh
 
@@ -66,9 +67,13 @@ case $MODULE in
     echo -e "openshift101 selected\n"
     ;;
 
+  devsecops)
+    echo -e "devsecops selected\n"
+    ;;
+
   *)
     echo -e "unknown module selected\n"
-    echo -e "Options: module1, module2, module3, module4, openshift101\n"
+    echo -e "Options: module1, module2, module3, module4, openshift101, devsecops\n"
     exit $?
     ;;
 esac
