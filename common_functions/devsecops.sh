@@ -4,5 +4,6 @@
 # Dark Yellow 0;33
 
 function devsecops-started() {
+    USERNAME=${1}
     
 }
